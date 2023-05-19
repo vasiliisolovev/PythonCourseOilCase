@@ -419,7 +419,7 @@ df.groupby('label').agg(dict_of_statistics).round(3)
 
 Ответ
 
-<span style="font-weight:bold">Задача</span>: [изучете материал по аггрегирующим функциям](https://cmdlinetips.com/2019/10/pandas-groupby-13-functions-to-aggregate/)
+<span style="font-weight:bold">Задача</span>: [изучите материал по аггрегирующим функциям](https://cmdlinetips.com/2019/10/pandas-groupby-13-functions-to-aggregate/)
 
 ### Полезные преобразования
 
@@ -531,47 +531,47 @@ df.fillna(val)
     
     В качестве первого упражнения, давайте сгенерируем последовательный список от 2 до 10:
     
-    ```python
-    import numpy as np
-    seq = np.arange(start,end,step) # Аргументы должны быть целочисленнными
-    '''
-    Метод ***np.arange()*** позволяет сгенерировать 
-    последовательный и упорядоченный список от *start* до *end* (не включительно) c шагом *step*
-    '''
-    ```
+```python
+import numpy as np
+seq = np.arange(start,end,step) # Аргументы должны быть целочисленнными
+'''
+Метод ***np.arange()*** позволяет сгенерировать 
+последовательный и упорядоченный список от *start* до *end* (не включительно) c шагом *step*
+'''
+```
     
     Часто, в задачах требуется генерация последовательностей, которая описывается некоторым законом распределения. Например, в сложных задачах машинного обучения по распознованию картинок, исследователи [накладывают Гауссовский шум](https://www.researchgate.net/publication/229008840_A_Spatial_and_Frequency_Domain_Analysis_of_the_Effect_of_Removal_Attacks_on_Digital_Image_Watermarks) на данные (методический приём). Или, на примере генерации куба пористости, которое имеет нормальное распределение, инженеры-нефтянники выполняют вероятностную оценку запасов методом Монте-Карло. 
     
     Сгенерировать такую выборку можно так:
     
-    ```python
-    import numpy as np
-    noize = np**.**random**.**normal**(**mu**,** sigma**,** **1000)**
+```python
+import numpy as np
+noize = np**.**random**.**normal**(**mu**,** sigma**,** **1000)**
+
+```
     
-    ```
-    
-    ![Untitled](bbpython/Untitled%2023.png)
+![Untitled](bbpython/Untitled%2023.png)
     
     Здесь *mu* и *sigma* - это параметры нормального распределения (матюожидание и дисперсия), а *1000* - количество наблюдений (точек данных) в распределении. 
     
     Или, говоря о проницаемости породы, которая характеризуется лог-нормальным распределением, можно сгенерировать выборку таким образом:
     
-    ```python
-    np.random.lognormal(mean,sigma,size)
-    ```
+```python
+np.random.lognormal(mean,sigma,size)
+```
     
     ![Untitled](bbpython/Untitled%2024.png)
     
     Также может возникнуть задача создания равномерного (одинаковый шаг) упорядоченного списка  в заданном интервале интереса. Для этой цели можно использовать метод:
     
-    ```python
-    import numpy as np
-    seq = np**.**linspace**(**start**,** end**,** count**)**
-    ```
+```python
+import numpy as np
+seq = np**.**linspace**(**start**,** end**,** count**)**
+```
     
     Парметры *start* и *end* ограничивают пространство генерации набольшим и наименьшим значениями (нижняя и верхняя граница), а *count* регулирует количество точек в выборке.
     
-    <span style="font-weight:bold">Задача</span>: Прочитайте [статью в Википедии](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9), а также [документацию библиотеки Numpy](https://numpy.org/doc/stable/reference/random/generator.html#). Составьте и заполните таблицу по примеру ниже (не более 6 примеров). Если ваше решение выходит за рамки использования одной бибилотеки (и оно работает), то это очень хорошо.
+<span style="font-weight:bold">Задача</span>: Прочитайте [статью в Википедии](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9), а также [документацию библиотеки Numpy](https://numpy.org/doc/stable/reference/random/generator.html#). Составьте и заполните таблицу по примеру ниже (не более 6 примеров). Если ваше решение выходит за рамки использования одной бибилотеки (и оно работает), то это очень хорошо.
     
     | Тип распределения случайной величины | Код для реализации в Numpy (etc) |
     | --- | --- |
@@ -1814,7 +1814,7 @@ MSE и MAE используют ту же шкалу, что и измеряем
 <details>
     <summary style="font-weight: bold;  color: green">Test your mind</summary>
 
-    [Задачи после прохождения курса](https://www.notion.so/ecae11f7920f445fa8f14af53f9ad09e)
+[Задачи после прохождения курса](https://www.notion.so/ecae11f7920f445fa8f14af53f9ad09e)
 </details>
 
 <details>
@@ -1825,26 +1825,26 @@ MSE и MAE используют ту же шкалу, что и измеряем
     
     ### make discretized color map from **continuous**
     
-    ```python
-    from matplotlib import cm
-    from matplotlib.colors import LinearSegmentedColormap
-    
-    def cmap_discretize(cmap, N):
-            
-        '''
-        The function transforms continuous cmap to discretized cmap with unique color        
-        return discretized cmap 
-        '''
-        colors_i = np.concatenate((np.linspace(0, 1., N), (0.,0.,0.,0.)))
-        colors_rgba = cmap(colors_i)
-        indices = np.linspace(0, 1., N+1)
-        cdict = {}
-        for ki,key in enumerate(('red','green','blue')):
-            cdict[key] = [ (indices[i], colors_rgba[i-1,ki], colors_rgba[i,ki]) for i in range(N+1) ]        
-        # Return colormap object.
-    
-        return LinearSegmentedColormap(cmap.name + "_%d"%N, cdict, 1024)
-    
-    cmap_discretize(cm.seismic,5)
-    ```
+```python
+from matplotlib import cm
+from matplotlib.colors import LinearSegmentedColormap
+
+def cmap_discretize(cmap, N):
+        
+    '''
+    The function transforms continuous cmap to discretized cmap with unique color        
+    return discretized cmap 
+    '''
+    colors_i = np.concatenate((np.linspace(0, 1., N), (0.,0.,0.,0.)))
+    colors_rgba = cmap(colors_i)
+    indices = np.linspace(0, 1., N+1)
+    cdict = {}
+    for ki,key in enumerate(('red','green','blue')):
+        cdict[key] = [ (indices[i], colors_rgba[i-1,ki], colors_rgba[i,ki]) for i in range(N+1) ]        
+    # Return colormap object.
+
+    return LinearSegmentedColormap(cmap.name + "_%d"%N, cdict, 1024)
+
+cmap_discretize(cm.seismic,5)
+```
 </details>
