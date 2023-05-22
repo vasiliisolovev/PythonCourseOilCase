@@ -189,7 +189,7 @@
 <details>
     <summary style="font-weight: bold;  color: green">Pandas/Numpy как база работы с файлами <span style="color: purple"> + Notebook</span></summary>
     Для демонстрации нужны файлы формы *XYZ, id,:features M:N,*
-	    <details>
+	    <details style="margin-left: 16px">
 		<summary  style="font-weight: bold">Чтение данных</summary>
 		Большая часть информации, с которой работают инженеры, хранится в табличном виде. Традиционно, формат файлов -это *excel*, *csv*, *txt.* Библиотеки [Pandas](https://pandas.pydata.org/docs/index.html) и 		Numpy - это базовые инструменты-интерфейсы для работы с файлами.
 
